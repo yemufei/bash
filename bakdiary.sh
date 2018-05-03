@@ -6,14 +6,18 @@
 #date +%Y%m
 #创建文件
 currentMonth=`date +%Y%m`
-
-fileName="${currentMonth}.txt"
+currentDate=`date +%Y-%m-%d`
+indexFileName="${currentMonth}.txt"
 
 cd /Users/yemufei/Desktop/DEV/GitHub/iNotes/iDiary/
-if [ ! -f "${fileName}" ]
+if [ ! -f "${indexFileName}" ]
 then
- touch "${fileName}"
+ touch "${indexFileName}"
 fi
 #续结内容
 
+dateline="\n\n\n______________________[${currentDate}]______________________"
+cd /Users/yemufei/Desktop/DEV/GitHub/iNotes/iDiary/
+echo -e "${dateline}" >> ${indexFileName}
+cat asdf.txt >> ${indexFileName}
 
