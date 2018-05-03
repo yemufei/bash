@@ -7,6 +7,8 @@
 #创建文件
 currentMonth=`date +%Y%m`
 currentDate=`date +%Y-%m-%d`
+weekday=`date +%A`
+
 indexFileName="${currentMonth}.txt"
 
 cd /Users/yemufei/Desktop/DEV/GitHub/iNotes/iDiary/
@@ -18,15 +20,16 @@ fi
 tempFileName="asdf.txt"
 
 #续接内容
+#先备份再做新建内容
 #dateline="\n\n\n______________________[${currentDate}]______________________"
 cd /Users/yemufei/Desktop/DEV/GitHub/iNotes/iDiary/
 #echo -e "${dateline}" >> ${indexFileName}
 cat ${tempFileName} >> ${indexFileName}
 cat /dev/null > asdf.txt
-echo -e "\n\n-----------------------------------------------" >> ${tempFileName}
-echo -e "                    [${currentDate}]" >> ${tempFileName}
-echo -e "-----------------------------------------------" >> ${tempFileName}
-echo -e "__________[]__________" >> ${tempFileName}
+echo -e "\n\n---------------------------------------------------------------------" >> ${tempFileName}
+echo -e "                    	[${currentDate} ${weekday}]" >> ${tempFileName}
+echo -e "---------------------------------------------------------------------" >> ${tempFileName}
+echo -e "________________[]________________" >> ${tempFileName}
 
 
 
