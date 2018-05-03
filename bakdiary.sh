@@ -14,10 +14,24 @@ if [ ! -f "${indexFileName}" ]
 then
  touch "${indexFileName}"
 fi
-#续结内容
 
-dateline="\n\n\n______________________[${currentDate}]______________________"
+tempFileName="asdf.txt"
+
+#续接内容
+#dateline="\n\n\n______________________[${currentDate}]______________________"
 cd /Users/yemufei/Desktop/DEV/GitHub/iNotes/iDiary/
-echo -e "${dateline}" >> ${indexFileName}
-cat asdf.txt >> ${indexFileName}
+#echo -e "${dateline}" >> ${indexFileName}
+cat ${tempFileName} >> ${indexFileName}
+cat /dev/null > asdf.txt
+echo -e "\n\n-----------------------------------------------" >> ${tempFileName}
+echo -e "                    [${currentDate}]" >> ${tempFileName}
+echo -e "-----------------------------------------------" >> ${tempFileName}
+echo -e "__________[]__________" >> ${tempFileName}
+
+
+
+
+
+
+
 
