@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/test.sh" line="9" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca5798ae-ee82-4114-928e-6eb14173aea5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ca5798ae-ee82-4114-928e-6eb14173aea5" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -319,7 +317,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17370000" />
+    <option name="totallyTimeSpent" value="18012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="213" y="82" width="1307" height="744" extended-state="6" />
