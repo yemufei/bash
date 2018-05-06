@@ -13,10 +13,12 @@ echo "SYSTEM UNDEFINED"
 fi
 
 cd "${githubdir}iNotes"
+git pull
 git add .
 git commit -m 'default'
 
 cd "${githubdir}bash"
+git pull
 git add .
 git commit -m 'default'
 
