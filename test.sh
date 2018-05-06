@@ -16,4 +16,5 @@ else
 echo "What?"
 fi     #ifend
 
+echo "I'm running,bababab" >> /Users/yemufei/templog/11.log
 #echo "hah"
