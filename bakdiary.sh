@@ -26,10 +26,10 @@ cd /Users/yemufei/Desktop/DEV/GitHub/iNotes/iDiary/
 #echo -e "${dateline}" >> ${indexFileName}
 cat ${tempFileName} >> ${indexFileName}
 cat /dev/null > asdf.txt
-echo -e "\n\n---------------------------------------------------------------------" >> ${tempFileName}
-echo -e "                    	[${currentDate} ${weekday}]" >> ${tempFileName}
-echo -e "---------------------------------------------------------------------" >> ${tempFileName}
-echo -e "________________[]________________" >> ${tempFileName}
+echo  "\n\n---------------------------------------------------------------------" >> ${tempFileName}
+echo  "                    	[${currentDate} ${weekday}]" >> ${tempFileName}
+echo  "---------------------------------------------------------------------" >> ${tempFileName}
+echo  "________________[]________________" >> ${tempFileName}
 
 
 
