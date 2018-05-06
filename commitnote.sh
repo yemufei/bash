@@ -7,7 +7,7 @@ SYSTEM=`uname -s`
 if [ $SYSTEM = "Linux" ] ; then
 githubdir="/home/yemufei/github/"
 elif [ $SYSTEM = "Darwin" ] ; then
-githubdir="/home/yemufei/github/"
+githubdir="/Users/yemufei/Desktop/DEV/GitHub/"
 else
 echo "SYSTEM UNDEFINED"
 fi
@@ -19,4 +19,7 @@ git commit -m 'default'
 cd "${githubdir}bash"
 git add .
 git commit -m 'default'
+
+
+
 
