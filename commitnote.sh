@@ -3,8 +3,15 @@
 #mac dir
 #cd /Users/yemufei/Desktop/DEV/GitHub/iNotes
 #ubuntu dir
+SYSTEM=`uname -s`
+if [ $SYSTEM = "Linux" ] ; then
 githubdir="/home/yemufei/github/"
-#echo "hello,I'm running" >> /home/yemufei/tmplog/11.log
+elif [ $SYSTEM = "Darwin" ] ; then
+githubdir="/home/yemufei/github/"
+else
+echo "SYSTEM UNDEFINED"
+fi
+
 cd "${githubdir}iNotes"
 git add .
 git commit -m 'default'
