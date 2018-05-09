@@ -1,7 +1,7 @@
 #!/bin/bash
 #echo "hahah"
 
-files= `ls -U /usr/share/background | grep -v contest`
+files= `ls -U /usr/share/backgrounds | grep -v contest`
 last_file="empty"
 
 echo '<background>'
