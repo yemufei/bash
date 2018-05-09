@@ -16,18 +16,18 @@ echo ' </starttime>'
 
 for current_file in ${files}
 do
-  if [[ ${last_file}=="empty" ]]
+  if [[ ${last_file} == "empty" ]]
 then
  last_file=${current_file}
     echo ' <static>'
     echo ' <duration>300.0</duration>'
-    echo " <file>/usr/share/backgrounds/${lastfile}</file>"
+    echo " <file>/usr/share/backgrounds/${last_file}</file>"
     echo '</static>'
 else
     echo  '<transition>'
     echo  '<duration>5.0</duration>'
     echo " <from>/usr/share/backgrounds/${last_file}</from>"
-    echo " <to>/usr/share/backgrounds/${currentfile}</to>"
+    echo " <to>/usr/share/backgrounds/${current_file}</to>"
     echo '</transition>'
     echo '<static>'
     echo '<duration>300.0</duration>'
