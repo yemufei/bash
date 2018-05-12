@@ -1,13 +1,13 @@
 #!/bin/bash
 #echo "hahah"
-backgrouddir="/home/yemufei/Pictures/mywallpapers/"
+mywallpapersdir="/home/yemufei/Pictures/mywallpapers/"
 
-files=`ls -U ${backgrouddir} | grep -v contest`
+files=`ls -U ${mywallpapersdir} | grep -v contest`
 last_file="empty"
 
 echo '<background>'
 echo ' <starttime>'
-echo ' <year>2015</year>'
+echo ' <year>2017</year>'
 echo ' <month>11</month>'
 echo ' <day>11</day>'
 echo ' <hour>00</hour>'
@@ -21,18 +21,18 @@ do
 then
  last_file=${current_file}
     echo ' <static>'
-    echo ' <duration>300.0</duration>'
-    echo " <file>/usr/share/backgrounds/${last_file}</file>"
+    echo ' <duration>60.0</duration>'
+    echo " <file>${mywallpapersdir}${last_file}</file>"
     echo '</static>'
 else
     echo  '<transition>'
     echo  '<duration>5.0</duration>'
-    echo " <from>/usr/share/backgrounds/${last_file}</from>"
-    echo " <to>/usr/share/backgrounds/${current_file}</to>"
+    echo " <from>${mywallpapersdir}${last_file}</from>"
+    echo " <to>${mywallpapersdir}${current_file}</to>"
     echo '</transition>'
     echo '<static>'
-    echo '<duration>300.0</duration>'
-    echo "<file>/usr/share/backgrounds/${current_file}</file>"
+    echo '<duration>60.0</duration>'
+    echo "<file>${mywallpapersdir}${current_file}</file>"
     echo ' </static>'
     last_file=${current_file}
 fi
