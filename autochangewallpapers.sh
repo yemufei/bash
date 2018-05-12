@@ -1,7 +1,8 @@
 #!/bin/bash
 #echo "hahah"
+backgrouddir="/home/yemufei/Pictures/mywallpapers/"
 
-files=`ls -U /usr/share/backgrounds | grep -v contest`
+files=`ls -U ${backgrouddir} | grep -v contest`
 last_file="empty"
 
 echo '<background>'
