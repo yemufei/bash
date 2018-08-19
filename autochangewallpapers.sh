@@ -12,7 +12,7 @@ echo ' <month>11</month>'
 echo ' <day>11</day>'
 echo ' <hour>00</hour>'
 echo ' <minute>00</minute>'
-echo ' <second>00</second>' 
+echo ' <second>00</second>'
 echo ' </starttime>'
 
 for current_file in ${files}
